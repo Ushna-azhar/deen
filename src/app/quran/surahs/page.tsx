@@ -4,8 +4,15 @@ import axios from 'axios';
 
 const SPECIFIC_SURAH_IDS = [1, 2, 36, 55, 4]; // Surah Al-Fatiha, Ayat ul-Kursi (Al-Baqarah), Surah Yaseen, Surah Ar-Rahman, Surah An-Nisa
 
+// Define types for the API response data
+interface Surah {
+  id: number;
+  name_simple: string;
+  translated_name: { name: string };
+}
+
 export default function SurahPage() {
-  const [surahs, setSurahs] = useState<any[]>([]);
+  const [surahs, setSurahs] = useState<Surah[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -13,7 +20,7 @@ export default function SurahPage() {
       try {
         const response = await axios.get('https://api.quran.com/api/v4/chapters');
         // Filter out only the specific Surahs you're interested in
-        const filteredSurahs = response.data.chapters.filter((surah: any) =>
+        const filteredSurahs = response.data.chapters.filter((surah: { id: number }) =>
           SPECIFIC_SURAH_IDS.includes(surah.id)
         );
         setSurahs(filteredSurahs);
