@@ -45,10 +45,10 @@ export default function SunnahPage() {
           <h2 className="text-4xl font-semibold text-center text-teal-800">Key Teachings from the Sunnah</h2>
           <ul className="space-y-6">
             <li className="text-xl text-teal-600">
-              <strong>Respect for Parents:</strong> Prophet Muhammad (PBUH) emphasized the importance of honoring and respecting one’s parents. He said, "Paradise lies under the feet of your mother."
+              <strong>Respect for Parents:</strong> Prophet Muhammad (PBUH) emphasized the importance of honoring and respecting one’s parents. He said, &quot;Paradise lies under the feet of your mother.&quot;
             </li>
             <li className="text-xl text-teal-600">
-              <strong>Helping Others:</strong> Prophet Muhammad (PBUH) urged acts of charity, kindness, and selflessness, saying, "The best of people are those who are most beneficial to others."
+              <strong>Helping Others:</strong> Prophet Muhammad (PBUH) urged acts of charity, kindness, and selflessness, saying, &quot;The best of people are those who are most beneficial to others.&quot;
             </li>
             <li className="text-xl text-teal-600">
               <strong>Patience and Perseverance:</strong> The Sunnah teaches us to endure hardship with patience and trust in Allah’s plan, exemplified through the Prophet’s resilience.
@@ -60,7 +60,7 @@ export default function SunnahPage() {
               <strong>Gratitude to Allah:</strong> Gratitude (Shukr) is a key theme in the Sunnah. Prophet Muhammad (PBUH) often expressed gratitude to Allah, teaching us to remain thankful for our blessings.
             </li>
             <li className="text-xl text-teal-600">
-              <strong>Forgiveness:</strong> Prophet Muhammad (PBUH) emphasized the importance of forgiveness, saying, "The best among you are those who are the most forgiving."
+              <strong>Forgiveness:</strong> Prophet Muhammad (PBUH) emphasized the importance of forgiveness, saying, &quot;The best among you are those who are the most forgiving.&quot;
             </li>
           </ul>
         </div>
