@@ -5,10 +5,24 @@ import axios from 'axios';
 
 const SPECIFIC_SURAH_IDS = [1, 2, 36, 55, 4]; // Surah Al-Fatiha, Ayat ul-Kursi, Surah Yaseen, Surah Ar-Rahman, Surah An-Nisa
 
+// Define types for the API response data
+interface Surah {
+  id: number;
+  name_arabic: string;
+  translated_name: { name: string };
+  name_simple: string;
+}
+
+interface Ayah {
+  id: number;
+  text_uthmani: string;
+  translation: string;
+}
+
 export default function SurahDetailPage() {
   const { id } = useParams();
-  const [surah, setSurah] = useState<any>(null);
-  const [ayahs, setAyahs] = useState<any[]>([]);
+  const [surah, setSurah] = useState<Surah | null>(null);
+  const [ayahs, setAyahs] = useState<Ayah[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -30,11 +44,9 @@ export default function SurahDetailPage() {
 
         setSurah(surahResponse.data.chapter);
 
-        const combinedAyahs = ayahResponse.data.verses.map((ayah: any, index: number) => ({
-          ...ayah,
-          // Fix: Preserve diacritics (Zabar, Zer, Pesh)
+        const combinedAyahs: Ayah[] = ayahResponse.data.verses.map((ayah: any, index: number) => ({
+          id: ayah.id,
           text_uthmani: ayah.text_uthmani.replace(/[^ء-ي\u064B-\u0652 ]/g, ''),
-          // Remove <sup> and footnotes from translation
           translation: translationResponse.data.translations[index]?.text.replace(/<sup.*?<\/sup>/g, '') || 'Translation not available',
         }));
 
