@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 export default function Page() {
@@ -28,7 +29,7 @@ export default function Page() {
             <div className="bg-teal-50 p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
               <h3 className="text-2xl font-bold text-teal-800 mb-4">1. Patience and Perseverance</h3>
               <p className="text-lg text-gray-800 leading-relaxed">
-                Despite facing severe opposition, persecution, and hardships in his mission, Prophet Muhammad (PBUH) remained patient and unwavering in his commitment to the truth. His patience in the face of adversity serves as an example for all Muslims. Whether enduring insults or the death of loved ones, he displayed immense resilience and trust in Allah's plan.
+                Despite facing severe opposition, persecution, and hardships in his mission, Prophet Muhammad (PBUH) remained patient and unwavering in his commitment to the truth. His patience in the face of adversity serves as an example for all Muslims. Whether enduring insults or the death of loved ones, he displayed immense resilience and trust in Allah&apos;s plan.
               </p>
             </div>
 
@@ -60,10 +61,10 @@ export default function Page() {
           <h2 className="text-4xl font-semibold text-teal-700 mb-6">His Family, Wives, and Children</h2>
           <div className="bg-teal-50 p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
             <p className="text-lg text-gray-800 leading-relaxed">
-              Prophet Muhammad (PBUH) had a deep love for his family, especially his wives and children. He was married to Khadijah bint Khuwaylid, who was his first and only wife until her passing. They had several children, including Fatimah, who played a crucial role in the early Islamic community. After Khadijah's death, Prophet Muhammad (PBUH) married several other women, including Aisha, Hafsa, and Zaynab, who were all important figures in the history of Islam. His relationships with his wives were characterized by mutual respect, love, and understanding.
+              Prophet Muhammad (PBUH) had a deep love for his family, especially his wives and children. He was married to Khadijah bint Khuwaylid, who was his first and only wife until her passing. They had several children, including Fatimah, who played a crucial role in the early Islamic community. After Khadijah&apos;s death, Prophet Muhammad (PBUH) married several other women, including Aisha, Hafsa, and Zaynab, who were all important figures in the history of Islam. His relationships with his wives were characterized by mutual respect, love, and understanding.
             </p>
             <p className="text-lg mt-6 text-gray-800 leading-relaxed">
-              Prophet Muhammad (PBUH) was also a loving father. He showed immense affection for his children, especially his daughters, and was devastated by their early deaths. His love for his children and his tender care for them highlight the importance of family in Islam. He also taught that the love and care for children are central to one’s faith and that they should be treated with kindness, patience, and respect.
+              Prophet Muhammad (PBUH) was also a loving father. He showed immense affection for his children, especially his daughters, and was devastated by their early deaths. His love for his children and his tender care for them highlight the importance of family in Islam. He also taught that the love and care for children are central to one&apos;s faith and that they should be treated with kindness, patience, and respect.
             </p>
           </div>
         </section>
@@ -73,7 +74,7 @@ export default function Page() {
           <h2 className="text-4xl font-semibold text-teal-700 mb-6">His Struggles and Trials</h2>
           <div className="bg-teal-50 p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
             <p className="text-lg text-gray-800 leading-relaxed">
-              Throughout his life, Prophet Muhammad (PBUH) faced immense trials. From the early years of his prophethood, he endured rejection, physical harm, and exile from his beloved Mecca. The year of sadness, when he lost both his wife Khadijah and his uncle Abu Talib, was a particularly difficult period for him. Despite these struggles, he remained focused on his mission, showing remarkable perseverance and faith in Allah's plan. His trials were not only personal but also social, as he worked to establish Islam in a hostile environment.
+              Throughout his life, Prophet Muhammad (PBUH) faced immense trials. From the early years of his prophethood, he endured rejection, physical harm, and exile from his beloved Mecca. The year of sadness, when he lost both his wife Khadijah and his uncle Abu Talib, was a particularly difficult period for him. Despite these struggles, he remained focused on his mission, showing remarkable perseverance and faith in Allah&apos;s plan. His trials were not only personal but also social, as he worked to establish Islam in a hostile environment.
             </p>
           </div>
         </section>
@@ -86,7 +87,7 @@ export default function Page() {
               Prophet Muhammad (PBUH) had a profound and unwavering love for Allah. His entire life was a manifestation of this love, and he dedicated himself entirely to fulfilling the commands of Allah. His devotion to worship, his prayers, and his constant remembrance of Allah are an example for all Muslims.
             </p>
             <p className="text-lg mt-6 text-gray-800 leading-relaxed">
-              Moreover, Prophet Muhammad (PBUH) had an immense love for his Ummah (followers). He is often described as "Rahmatan Lil-Aalamin" (a mercy to the worlds), always thinking of the well-being of his followers, both in this life and the Hereafter. His love for his Ummah is evident in his constant prayers for them, his encouragement to spread kindness, and his efforts to ensure their spiritual and worldly welfare.
+              Moreover, Prophet Muhammad (PBUH) had an immense love for his Ummah (followers). He is often described as &quot;Rahmatan Lil-Aalamin&quot; (a mercy to the worlds), always thinking of the well-being of his followers, both in this life and the Hereafter. His love for his Ummah is evident in his constant prayers for them, his encouragement to spread kindness, and his efforts to ensure their spiritual and worldly welfare.
             </p>
           </div>
         </section>
