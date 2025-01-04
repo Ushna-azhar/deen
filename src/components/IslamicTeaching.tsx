@@ -40,13 +40,13 @@ export default function IslamicTeaching() {
     ];
 
     return (
-        <div className="bg-gradient-to-r from-teal-300 via-teal-600 to-teal-800 text-white py-12text-white p-10 rounded-2xl max-w-7xl mx-auto my-16 shadow-xl transform transition-all duration-500 ease-in-out">
+        <div className="bg-gradient-to-r from-teal-300 via-teal-600 to-teal-800 text-white py-12 p-10 rounded-2xl max-w-7xl mx-auto my-16 shadow-xl transform transition-all duration-500 ease-in-out">
             {/* Core Beliefs Section */}
             <h1 className="text-4xl font-semibold text-center mb-10 animate__animated animate__fadeIn">🌙 Core Beliefs of Islam</h1>
             <div className="space-y-8">
                 {coreBeliefs.map((belief, index) => (
                     <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transform transition-all duration-300 hover:scale-105">
-                        <p className=" text-green-950 text-lg">{belief}</p>
+                        <p className="text-green-950 text-lg">{belief}</p>
                     </div>
                 ))}
             </div>
@@ -57,7 +57,7 @@ export default function IslamicTeaching() {
                 {asmaUlHusna.map((name, index) => (
                     <div key={index} className="bg-teal-100 p-6 rounded-2xl shadow-xl transform transition-transform hover:scale-110 hover:bg-green-700 hover:rotate-2">
                         <p className="text-green-950 text-xl font-semibold">{name.name}</p>
-                        <p className="text-green-950   text-sm mt-2">{name.meaning}</p>
+                        <p className="text-green-950 text-sm mt-2">{name.meaning}</p>
                     </div>
                 ))}
             </div>
