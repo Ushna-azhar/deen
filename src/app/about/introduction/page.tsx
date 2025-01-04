@@ -52,14 +52,14 @@ export default function Page() {
         <section className="bg-white p-8 rounded-xl shadow-lg mb-12 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:bg-teal-50">
           <h2 className="text-4xl font-semibold text-teal-700 mb-6">Muslim Greetings</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            Greetings in Islam embody the values of peace and brotherhood. The most common greeting is <strong>"Assalamu Alaikum"</strong>, meaning "Peace be upon you," with the response <strong>"Wa Alaikum Assalam"</strong>, "And upon you be peace."
+            Greetings in Islam embody the values of peace and brotherhood. The most common greeting is <strong>&quot;Assalamu Alaikum&quot;</strong>, meaning "Peace be upon you," with the response <strong>&quot;Wa Alaikum Assalam&quot;</strong>, "And upon you be peace."
           </p>
           <ul className="list-disc pl-6 mt-4 text-lg text-gray-800 space-y-4">
             <li>
-              <strong>"Assalamu Alaikum wa Rahmatullahi wa Barakatuh"</strong> – "Peace, mercy, and blessings of Allah be upon you."
+              <strong>&quot;Assalamu Alaikum wa Rahmatullahi wa Barakatuh&quot;</strong> – &quot;Peace, mercy, and blessings of Allah be upon you.&quot;
             </li>
-            <li><strong>"Marhaban"</strong> – A warm welcome.</li>
-            <li><strong>"Ahlan wa Sahlan"</strong> – "Welcome, you are among friends."</li>
+            <li><strong>&quot;Marhaban&quot;</strong> – A warm welcome.</li>
+            <li><strong>&quot;Ahlan wa Sahlan&quot;</strong> – &quot;Welcome, you are among friends.&quot;</li>
           </ul>
         </section>
 
