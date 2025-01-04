@@ -2,10 +2,19 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+// Define a type for prayer timings
+interface PrayerTimes {
+  fajr: string;
+  dhuhr: string;
+  asr: string;
+  maghrib: string;
+  isha: string;
+}
+
 const PrayerTime = () => {
   const [city, setCity] = useState('Karachi');
   const [country] = useState('Pakistan');
-  const [prayerTimes, setPrayerTimes] = useState<any>(null);
+  const [prayerTimes, setPrayerTimes] = useState<PrayerTimes | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -14,7 +23,7 @@ const PrayerTime = () => {
         const response = await axios.get(
           `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`
         );
-        setPrayerTimes(response.data.data.timings);
+        setPrayerTimes(response.data.data.timings); // This should match the PrayerTimes type
       } catch (error) {
         setError('Failed to fetch prayer times');
       }
