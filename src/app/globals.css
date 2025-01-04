@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(45deg, #FFB6C1, #FF1493); /* Light pink to Deep pink */
+  }
+  25% {
+    background: linear-gradient(45deg, #00BFFF, #1E90FF); /* Deep Sky Blue to Dodger Blue */
+  }
+  50% {
+    background: linear-gradient(45deg, #32CD32, #228B22); /* Lime Green to Forest Green */
+  }
+  75% {
+    background: linear-gradient(45deg, #FFD700, #FF8C00); /* Gold to Dark Orange */
+  }
+  100% {
+    background: linear-gradient(45deg, #FFB6C1, #FF1493); /* Back to Light Pink to Deep Pink */
+  }
+}
+
+.bg-gradient-animate {
+  animation: gradient-animation 10s ease infinite; /* 10 seconds loop with smooth transition */
+}
