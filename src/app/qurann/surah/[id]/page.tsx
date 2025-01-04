@@ -3,10 +3,22 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import axios from 'axios';
 
+// Define types for the API response data
+interface Surah {
+  id: number;
+  name_simple: string;
+  translated_name: { name: string };
+}
+
+interface Ayah {
+  id: number;
+  text_uthmani: string;
+}
+
 export default function SurahDetailPage() {
   const { id } = useParams();
-  const [surah, setSurah] = useState<any>(null);
-  const [ayahs, setAyahs] = useState<any[]>([]);
+  const [surah, setSurah] = useState<Surah | null>(null);
+  const [ayahs, setAyahs] = useState<Ayah[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -14,6 +26,8 @@ export default function SurahDetailPage() {
       try {
         const surahResponse = await axios.get(`https://api.quran.com/api/v4/chapters/${id}`);
         const ayahResponse = await axios.get(`https://api.quran.com/api/v4/quran/verses/uthmani?chapter_number=${id}`);
+        
+        // Set the Surah data and Ayah data
         setSurah(surahResponse.data.chapter);
         setAyahs(ayahResponse.data.verses);
         setIsLoading(false);
@@ -32,8 +46,8 @@ export default function SurahDetailPage() {
     <div className="bg-gradient-to-r from-teal-200 to-teal-300 text-green-900 py-16 px-8 font-poppins">
       <div className="max-w-7xl mx-auto text-center">
         {/* Surah Title */}
-        <h1 className="text-5xl font-extrabold text-teal-800 mb-12">{surah.name_simple}</h1>
-        <p className="text-lg font-semibold mb-8">{surah.translated_name.name}</p>
+        <h1 className="text-5xl font-extrabold text-teal-800 mb-12">{surah?.name_simple}</h1>
+        <p className="text-lg font-semibold mb-8">{surah?.translated_name.name}</p>
 
         {/* Audio Section */}
         <div className="mb-12">
